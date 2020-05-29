@@ -12,7 +12,7 @@ from sklearn.cluster import KMeans
 #dataset= pd.read_csv(r"C:\Users\Abdul Quddus\Desktop\DS-Project\games.csv")
 dataset= pd.read_csv(r"X:\Git Hub\DataScience\games.csv")
 
-# In changing X=dataset.iloc[:, [3,4]].values
+# In changing X=dataset.values[:, [3,4]]
 X = dataset.values[:, 0:61]
 
 print("\nThese are the values of the dataset:\n")
