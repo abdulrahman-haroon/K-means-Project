@@ -1,13 +1,13 @@
 #51490 rows x 61 columns
 
-#1 Importing the libraries
+# Importing the libraries
 
 import  numpy as np #Scientific computation
 import matplotlib.pyplot as plt # embedding plots
 import pandas as pd #data analysis and manipulation
 from sklearn.cluster import KMeans
 
-#2 Importing the mall dataset
+# Importing the (LoL) League of Legends Ranked Games over 50,000 ranked games dataset
 
 #dataset= pd.read_csv(r"C:\Users\Abdul Quddus\Desktop\DS-Project\games.csv")
 dataset= pd.read_csv(r"X:\Git Hub\DataScience\games.csv")
