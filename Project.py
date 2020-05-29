@@ -12,7 +12,7 @@ from sklearn.cluster import KMeans
 #dataset= pd.read_csv(r"C:\Users\Abdul Quddus\Desktop\DS-Project\games.csv")
 dataset= pd.read_csv(r"X:\Git Hub\DataScience\games.csv")
 
-#Select the annual income and the spending score columns X=dataset.iloc[:, [3,4]].values
+# In changing X=dataset.iloc[:, [3,4]].values
 X = dataset.values[:, 0:61]
 
 print("\nThese are the values of the dataset:\n")
@@ -72,6 +72,7 @@ print("\n")
 print("Calculated Inertia is :")
 print(kmeans.inertia_)
 print("\n")
+
 # Elbow Method
 Error = []
 for i in range(1, 11):
@@ -91,11 +92,13 @@ print(Error)
 
 #Then selecting K=3 after the computation from elbow method.
 
+print("\n\nSelecting K=3 after the computation from elbow method:\n")
+
 kmeans = KMeans(n_clusters=3, init ='k-means++', max_iter=300, n_init=10,random_state=0 ) #Preparing the object
 # We are going to use the fit predict method that returns for each #observation which cluster it belongs to. The cluster to which #client belongs and it will return this cluster numbers into a #single vector that is  called y K-means
 y_kmeans = kmeans.fit_predict(X)
 
-print("\nThese are the data of which the clusters are assigned:\n")
+print("These are the data of which the clusters are assigned:\n")
 print(y_kmeans)
 
 print("\nThese are the finaled centers after convergence:\n")
