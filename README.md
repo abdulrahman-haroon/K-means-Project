@@ -1,2 +1,2 @@
-# Ds-Project-Pycharm
+# Pycharm
 Kmeans with Elbow Method
